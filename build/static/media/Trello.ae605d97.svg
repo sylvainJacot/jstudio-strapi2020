@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>01 Base / Ic / Trello</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0091E6" offset="0%"></stop>
+            <stop stop-color="#0079BF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="01-Base-/-Ic-/-Trello" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="trello" fill-rule="nonzero">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="80" height="80" rx="7.8125"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="45.2" y="10.4" width="24.4" height="35" rx="3.75"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="10.4" y="10.4" width="24.4" height="55" rx="3.75"></rect>
+        </g>
+    </g>
+</svg>

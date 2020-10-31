@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>01 Base / Ic / atomicdesign</title>
+    <g id="01-Base-/-Ic-/-atomicdesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(3.500000, 3.500000)">
+            <path d="M36.5,0 C56.6583934,0 73,16.3416066 73,36.5 C73,56.6583934 56.6583934,73 36.5,73 C16.3416066,73 0,56.6583934 0,36.5 C0,16.3416066 16.3416066,0 36.5,0 Z M36.5,4 C18.5507456,4 4,18.5507456 4,36.5 C4,54.4492544 18.5507456,69 36.5,69 C54.4492544,69 69,54.4492544 69,36.5 C69,18.5507456 54.4492544,4 36.5,4 Z" id="Oval" fill="#000000" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#BD682A" cx="62.7683584" cy="15.2683584" r="9"></circle>
+        </g>
+        <circle id="Oval" fill="#BD682A" cx="40" cy="40" r="19.5"></circle>
+    </g>
+</svg>
