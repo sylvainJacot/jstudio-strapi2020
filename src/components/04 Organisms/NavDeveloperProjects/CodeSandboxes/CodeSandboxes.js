@@ -4,7 +4,7 @@ import { colorsRoles } from "../../../01 Atoms/Colors";
 import CodeSandBoxItem from "./CodeSandBoxItem";
 import { fonts } from "../../../01 Atoms/globalStyle";
 import CodeSandBox from "../../../../media/icons/methodology/code-sandbox.svg";
-// import {codesandboxes} from "../../../01 Atoms/codesandboxes";
+import { API_URL } from "../../../../config";
 import { media } from "../../../01 Atoms/MediaQueries";
 
 const CodeSandboxes = () => {
@@ -12,7 +12,7 @@ const CodeSandboxes = () => {
   const [codesandboxes, setCodesandboxes] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:1337/code-sandboxes", {
+    fetch(API_URL + "/codesandboxes", {
       method: "GET",
       headers: {
         Accept: "Application/json",
@@ -38,7 +38,7 @@ const CodeSandboxes = () => {
                 <CodeSandBoxItem
                   key={index}
                   href={item.link}
-                  src={"http://localhost:1337" + item.thumbnail.url}
+                  src={item.thumbnail.url}
                   alt={item.alt}
                   label={item.label}
                 />
