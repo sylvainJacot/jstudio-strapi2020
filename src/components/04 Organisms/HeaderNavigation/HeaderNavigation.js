@@ -163,7 +163,7 @@ const HeaderNavigation = (props) => {
                         <IcGitHub FillColor={menuColor} Size={"24px"}/>
                     </a>
                     <Link rel="noopener noreferrer" to="/blog">
-                        <IcBlog FillColor={menuColor} Size={"24px"}/>
+                        <IcBlog FillColor={colorsRoles.Brand02} Size={"24px"}/>
                     </Link>
                 </SocialsWrapper>
 
