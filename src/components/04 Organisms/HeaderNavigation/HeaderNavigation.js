@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from "react";
 import styled from "styled-components";
 import {Link, useLocation, useRouteMatch} from "react-router-dom";
 import {colorsRoles} from "../../01 Atoms/Colors";
-import {LogoJacotStudio, IcLinkedin, IcInstagram, IcWhatsapp, IcGitHub} from "../../01 Atoms/Icons";
+import {LogoJacotStudio, IcLinkedin, IcBlog, IcWhatsapp, IcGitHub} from "../../01 Atoms/Icons";
 import IcBurgerMenu from "../../01 Atoms/Icons";
 import {transitions} from "../../01 Atoms/Animations";
 import {media} from "../../01 Atoms/MediaQueries";
@@ -162,9 +162,9 @@ const HeaderNavigation = (props) => {
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/sylvainJacot">
                         <IcGitHub FillColor={menuColor} Size={"24px"}/>
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/el_jacot/">
-                        <IcInstagram FillColor={menuColor} Size={"24px"}/>
-                    </a>
+                    <Link rel="noopener noreferrer" to="/blog">
+                        <IcBlog FillColor={menuColor} Size={"24px"}/>
+                    </Link>
                 </SocialsWrapper>
 
 

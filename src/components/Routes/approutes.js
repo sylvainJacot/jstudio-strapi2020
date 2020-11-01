@@ -8,9 +8,10 @@ import UxUiProjects from "../05 Pages/UxUiProjects";
 import CreativeDeveloperProjects from "../05 Pages/CreativeDeveloperProjects";
 import PhotoRetoucherProjects from "../05 Pages/PhotoRetoucherProjects";
 import UiUxDesignProjectTemplate from "../05 Pages/UiUxDesignProjectTemplate";
-import {pathuiux, pathdev, pathphoto, pathabout} from "../01 Atoms/Data";
+import {pathuiux, pathdev, pathphoto, pathabout, pathblog} from "../01 Atoms/Data";
 import CreativeDeveloperProjectTemplate from "../05 Pages/CreativeDeveloperProjectTemplate";
 import PhotoRetoucherProjectTemplate from "../05 Pages/PhotoRetoucherProjectTemplate";
+import BlogPage from "../05 Pages/BlogPage";
 
 
 const Routes = [
@@ -38,6 +39,11 @@ const Routes = [
         path: pathabout,
         exact: true,
         component: AboutPage,
+    },
+    {
+        path: pathblog,
+        exact: true,
+        component: BlogPage,
     },
     {
         path: pathuiux+"/:slug",
