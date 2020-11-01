@@ -35,6 +35,7 @@ export const ThumbnailBlogContainer = styled.div`
 `;
 
 export const ContentText = styled.div`
+margin-left: 80px;
   & h1 {
     position: relative;
     ${fonts.PlayFairDisplay};
@@ -49,16 +50,16 @@ export const ContentText = styled.div`
     `}
   }
 
-    & p {
-      ${fonts.Roboto};
-      font-style: normal;
-      font-size: 2rem;
-      color: ${colorsRoles.DarkGrey};
-      letter-spacing: 0;
-      line-height: 1.5;
-      margin-bottom: 8px;
-      text-align: left;
-    }
+  & p {
+    ${fonts.Roboto};
+    font-style: normal;
+    font-size: 2rem;
+    color: ${colorsRoles.DarkGrey};
+    letter-spacing: 0;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-align: left;
+  }
 `;
 
 export const ThumbnailPicture = styled.div`
@@ -66,8 +67,9 @@ export const ThumbnailPicture = styled.div`
   width: 468px;
   height: 282px;
   background-color: ${colors.LightGrey2};
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0px 10px 16px 1px rgba(0, 0, 0, 0.08);
 
   & img {
     width: 100%;
