@@ -21,7 +21,7 @@ const ThumbnailBlog = (props) => {
 
         <ContentText>
           <h1>{props.MainTitlePost}</h1>
-          <p>{props.Content}</p>
+            {props.content}
           <Button label={"Read this article"} pathname={"/"} lightmode />
         </ContentText>
       </ThumbnailBlogContainer>
@@ -80,12 +80,10 @@ export const ThumbnailPicture = styled.div`
   overflow: hidden;
   box-shadow: 0px 10px 16px 1px rgba(0, 0, 0, 0.08);
 
-
   ${media.tablet`
     width: 468px;
   height: 282px;
   `}
-
 
   & img {
     width: 100%;

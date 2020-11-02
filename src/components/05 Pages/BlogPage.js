@@ -26,6 +26,10 @@ const BlogPage = () => {
       });
   }, []);
 
+  // const handleContent = (y) => {
+  //   JSON.parse(y);
+  // };
+
   return (
     <>
       <BlogPageContainer>
@@ -38,10 +42,9 @@ const BlogPage = () => {
                 key={index}
                 Cover={item.cover.url}
                 MainTitlePost={item.MainTitlePost}
-                Content={item.content}
+                content={item.content}
               />
-              )
-            )}
+            ))}
       </BlogPageContainer>
     </>
   );
