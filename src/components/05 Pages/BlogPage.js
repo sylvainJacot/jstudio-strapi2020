@@ -42,7 +42,7 @@ const BlogPage = () => {
                 key={index}
                 Cover={item.cover.url}
                 MainTitlePost={item.MainTitlePost}
-                content={item.content}
+                content={ThumbnailBlog.insertAdjacentHTML('afterbegin', `<div id="box></div>`)}
               />
             ))}
       </BlogPageContainer>
