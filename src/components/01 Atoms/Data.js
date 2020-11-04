@@ -52,7 +52,7 @@ export const pathuiux = "/ux-ui-designer";
 export const pathdev = "/creative-developer";
 export const pathphoto = "/photo-retoucher";
 export const pathabout = "/about";
-export const pathblog = "/blog-posts";
+export const pathblog = "/posts";
 
 const UXUIDesigner = (
   <>

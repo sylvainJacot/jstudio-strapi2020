@@ -21,7 +21,7 @@ const ThumbnailBlog = (props) => {
 
         <ContentText>
           <h1>{props.title}</h1>
-          description
+          {props.descriptionpost}
           <Button label={"Read this article"} pathname={props.slug} lightmode />
         </ContentText>
       </ThumbnailBlogContainer>

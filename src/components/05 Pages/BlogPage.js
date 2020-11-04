@@ -41,9 +41,11 @@ const BlogPage = () => {
               <ThumbnailBlog
                 key={index}
                 thumbnail={item.thumbnail[0].url}
-                MainTitlePost={item.title}
-                // description={parse(item.description)}
-                slug={pathblog + "/" + item.slug}
+                title={item.title}
+                descriptionpost={parse(
+                  item.Description.substring(0, 100) + "..."
+                )}
+                slug={pathblog + "/" + item.id}
               />
             ))}
       </BlogPageContainer>

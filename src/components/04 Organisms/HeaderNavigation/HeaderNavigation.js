@@ -15,6 +15,7 @@ import { media } from "../../01 Atoms/MediaQueries";
 import { pathdev, pathphoto, pathuiux } from "../../01 Atoms/Data";
 import { UserContext } from "../../Hooks/Providers/Context";
 import AboutPage from "../../05 Pages/AboutPage";
+import {pathblog} from "../../01 Atoms/Data";
 
 export const StyledLink = styled(Link)`
   order: 1;
@@ -176,7 +177,7 @@ const HeaderNavigation = (props) => {
           >
             <IcGitHub FillColor={menuColor} Size={"24px"} />
           </a>
-          <Link rel="noopener noreferrer" to="/blog-posts">
+          <Link rel="noopener noreferrer" to={pathblog}>
             <IcBlog FillColor={colorsRoles.Brand02} Size={"24px"} />
           </Link>
         </SocialsWrapper>

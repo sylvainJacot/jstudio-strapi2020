@@ -9,25 +9,19 @@ const BlogPostItem = () => {
   let [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    fetch(`${API_URL}/blog-posts/${id}`)
+    fetch(`${API_URL}/posts/${id}`)
       .then((res) => res.json())
       .then((res) => {
-        setPost(res);
-        setIsLoading(true);
+        setTimeout(() => {
+          setPost(res);
+          setIsLoading(true);
+        }, 1000);
       });
   });
 
   return (
     <>
-      <div>
-        {
-          (isLoading = true ? (
-            <Title>{post.MainTitlePost}</Title>
-          ) : (
-            "Loading..."
-          ))
-        }
-      </div>
+      <div>{isLoading ? post.title : "Loading..."}</div>
     </>
   );
 };
