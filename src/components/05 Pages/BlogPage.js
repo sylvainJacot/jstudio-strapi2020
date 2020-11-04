@@ -5,13 +5,15 @@ import { fonts } from "../01 Atoms/globalStyle";
 import { media } from "../01 Atoms/MediaQueries";
 import { colors, colorsRoles } from "../01 Atoms/Colors";
 import { API_URL } from "../../config";
+import parse from "html-react-parser";
+import { pathblog } from "../01 Atoms/Data";
 
 const BlogPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
-    fetch(API_URL + "/blog-posts", {
+    fetch(API_URL + "/posts", {
       method: "GET",
       headers: {
         Accept: "Application/json",
@@ -26,9 +28,7 @@ const BlogPage = () => {
       });
   }, []);
 
-  // const handleContent = (y) => {
-  //   JSON.parse(y);
-  // };
+  // var parse = require("html-react-parser");
 
   return (
     <>
@@ -40,9 +40,10 @@ const BlogPage = () => {
           : posts.map((item, index) => (
               <ThumbnailBlog
                 key={index}
-                Cover={item.cover.url}
-                MainTitlePost={item.MainTitlePost}
-                content={ThumbnailBlog.insertAdjacentHTML('afterbegin', `<div id="box></div>`)}
+                thumbnail={item.thumbnail[0].url}
+                MainTitlePost={item.title}
+                // description={parse(item.description)}
+                slug={pathblog + "/" + item.slug}
               />
             ))}
       </BlogPageContainer>

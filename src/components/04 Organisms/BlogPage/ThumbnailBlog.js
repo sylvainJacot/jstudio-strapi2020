@@ -16,13 +16,13 @@ const ThumbnailBlog = (props) => {
             <Bullet bgcolor={colorsRoles.Brand02}></Bullet>
             <Bullet bgcolor={colorsRoles.Brand03}></Bullet>
           </ThumbnailPictureNav>
-          <img src={props.Cover} />
+          <img src={props.thumbnail} alt="test" />
         </ThumbnailPicture>
 
         <ContentText>
-          <h1>{props.MainTitlePost}</h1>
-            {props.content}
-          <Button label={"Read this article"} pathname={"/"} lightmode />
+          <h1>{props.title}</h1>
+          description
+          <Button label={"Read this article"} pathname={props.slug} lightmode />
         </ContentText>
       </ThumbnailBlogContainer>
     </>
@@ -41,6 +41,9 @@ export const ThumbnailBlogContainer = styled.div`
 
 export const ContentText = styled.div`
   /* margin-left: 80px; */
+  width: 100%;
+  display: inline-block;
+  max-height: 160px;
   & h1 {
     position: relative;
     ${fonts.PlayFairDisplay};
