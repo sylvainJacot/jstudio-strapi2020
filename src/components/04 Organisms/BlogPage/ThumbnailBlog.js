@@ -33,10 +33,14 @@ export default ThumbnailBlog;
 export const ThumbnailBlogContainer = styled.div`
   position: relative;
   margin-top: 160px;
-  width: 800px;
+  width: 640px;
   height: 533px;
   display: flex;
   align-items: flex-end;
+
+  ${media.desktopL`
+  width: 800px;
+  `}
 `;
 
 export const ContentText = styled.div`
@@ -48,16 +52,16 @@ export const ContentText = styled.div`
   & h1 {
     position: relative;
     ${fonts.PlayFairDisplay};
-    font-size: 4rem;
-    line-height: 48px;
+    font-size: 6rem;
+    line-height: 6rem;
     color: ${colorsRoles.DarkGrey};
+    width: 64%;
 
     ${media.desktop`
     font-size: 8rem;
     line-height: 8rem;
     flex-direction: unset;
     align-items: unset;
-    width: 504px;
     `}
   }
 
@@ -69,7 +73,6 @@ export const ContentText = styled.div`
     letter-spacing: 0;
     line-height: 1.5;
     text-align: left;
-    width: 800px;
     max-height: 72px;
     margin: 4rem 0 2rem 0;
   }
@@ -77,8 +80,8 @@ export const ContentText = styled.div`
 
 export const ThumbnailPicture = styled.div`
   position: absolute;
-  width: 468px;
-  height: 293px;
+  width: 367px;
+  height: 230px;
   background-color: ${colors.LightGrey2};
   box-shadow: 0px 10px 16px 1px rgba(0, 0, 0, 0.08);
   right: 0;
@@ -86,10 +89,19 @@ export const ThumbnailPicture = styled.div`
   overflow: hidden;
   border-radius: 1rem;
 
+  ${media.desktopL`
+  width: 468px;
+  height: 293px;
+  `}
+
   & img {
     width: 100%;
-    height: 100%;
+    height: 190px;
     background-color: white;
+
+    ${media.desktopL`
+    height: 253px;
+    `}
   }
 `;
 
