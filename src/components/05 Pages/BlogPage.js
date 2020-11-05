@@ -55,21 +55,20 @@ const BlogPage = () => {
 
 export default BlogPage;
 
-export const Title = styled.p`
-
-`;
+export const Title = styled.p``;
 
 export const BlogPageContainer = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${colors.White};
-  padding: 64px 16px 0px 16px;
+  padding-top: 64px;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 
   ${media.desktop`
-width: calc(100% - 80px);
+  align-items: center;
+  width: calc(100% - 80px);
 `}
 
   ${Title} {
