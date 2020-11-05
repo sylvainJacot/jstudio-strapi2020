@@ -33,7 +33,7 @@ const BlogPage = () => {
   return (
     <>
       <BlogPageContainer>
-        <h1>Blog</h1>
+        <Title>Blog</Title>
 
         {isLoading
           ? "Loading..."
@@ -43,7 +43,7 @@ const BlogPage = () => {
                 thumbnail={item.thumbnail[0].url}
                 title={item.title}
                 descriptionpost={parse(
-                  item.Description.substring(0, 100) + "..."
+                  item.Description.substring(0, 208) + "..."
                 )}
                 slug={pathblog + "/" + item.id}
               />
@@ -54,6 +54,10 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
+export const Title = styled.p`
+
+`;
 
 export const BlogPageContainer = styled.div`
   width: 100%;
@@ -68,7 +72,7 @@ export const BlogPageContainer = styled.div`
 width: calc(100% - 80px);
 `}
 
-  & h1 {
+  ${Title} {
     position: relative;
     ${fonts.PlayFairDisplay};
     font-size: 4rem;

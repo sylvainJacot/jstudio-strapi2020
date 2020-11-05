@@ -4,7 +4,6 @@ import { colors, colorsRoles } from "../../01 Atoms/Colors";
 import Button from "../../02 Molecules/Button";
 import { media } from "../../01 Atoms/MediaQueries";
 import { fonts } from "../../01 Atoms/globalStyle";
-import test from "../../../media/img/Projects/03_Photo Retoucher/HOTELMARRAKECH/H_Almaha-Folio01.png";
 
 const ThumbnailBlog = (props) => {
   return (
@@ -32,31 +31,33 @@ const ThumbnailBlog = (props) => {
 export default ThumbnailBlog;
 
 export const ThumbnailBlogContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  position: relative;
   margin-top: 160px;
-  width: 80%;
+  width: 800px;
+  height: 533px;
+  display: flex;
+  align-items: flex-end;
 `;
 
 export const ContentText = styled.div`
   /* margin-left: 80px; */
   width: 100%;
   display: inline-block;
-  max-height: 160px;
+  position: relative;
+
   & h1 {
     position: relative;
     ${fonts.PlayFairDisplay};
     font-size: 4rem;
     line-height: 48px;
     color: ${colorsRoles.DarkGrey};
-    margin-top: 40px;
-    margin-bottom: 16px;
+
     ${media.desktop`
-    font-size: 6rem;
-    line-height: 84px;
+    font-size: 8rem;
+    line-height: 8rem;
     flex-direction: unset;
     align-items: unset;
+    width: 504px;
     `}
   }
 
@@ -67,29 +68,27 @@ export const ContentText = styled.div`
     color: ${colorsRoles.DarkGrey};
     letter-spacing: 0;
     line-height: 1.5;
-    margin-bottom: 8px;
     text-align: left;
+    width: 800px;
+    max-height: 72px;
+    margin: 4rem 0 2rem 0;
   }
 `;
 
 export const ThumbnailPicture = styled.div`
-  position: relative;
-  /* width: 468px;
-  height: 282px; */
-  width: 280px;
-  height: 170px;
+  position: absolute;
+  width: 468px;
+  height: 293px;
   background-color: ${colors.LightGrey2};
-  border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0px 10px 16px 1px rgba(0, 0, 0, 0.08);
-
-  ${media.tablet`
-    width: 468px;
-  height: 282px;
-  `}
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  border-radius: 1rem;
 
   & img {
     width: 100%;
+    height: 100%;
     background-color: white;
   }
 `;
