@@ -54,7 +54,7 @@ export const ContentText = styled.div`
   width: 100%;
   display: inline-block;
   position: relative;
-  transition: ${transitions.basic1}
+  transition: ${transitions.basic1};
 
   & h1 {
     position: relative;

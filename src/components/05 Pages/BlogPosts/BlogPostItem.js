@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import { fonts } from "../../01 Atoms/globalStyle";
+import { colorsRoles } from "../../01 Atoms/Colors";
+import { media } from "../../01 Atoms/MediaQueries";
 import { API_URL } from "../../../config";
+import parse from "html-react-parser";
+import BackButton from "../../02 Molecules/BackButton";
 
 const BlogPostItem = () => {
   const { id } = useParams();
@@ -15,19 +20,127 @@ const BlogPostItem = () => {
         setTimeout(() => {
           setPost(res);
           setIsLoading(true);
-        }, 1000);
+        }, 0);
       });
   });
 
   return (
     <>
-      <div>{isLoading ? post.title : "Loading..."}</div>
+      {isLoading ? (
+        <>
+          <BackButton />
+          <PostItemPage>
+            <PostItemContainer>
+              <Title>{post.title}</Title>
+              <Content>{parse(post.content)}</Content>
+            </PostItemContainer>
+          </PostItemPage>
+        </>
+      ) : (
+        "Loading..."
+      )}
     </>
   );
 };
 
 export default BlogPostItem;
 
-export const Title = styled.div`
-  color: white;
+export const Title = styled.h1`
+  position: relative;
+  ${fonts.PlayFairDisplay};
+  font-size: 4rem;
+  line-height: 4rem;
+  color: ${colorsRoles.DarkGrey};
+  padding-top: 120px;
+  margin: auto;
+  text-align: center;
+
+  ${media.tablet`
+    font-size: 6rem;
+    line-height: 6rem;
+    `}
+`;
+
+export const Content = styled.div`
+  position: relative;
+  margin: auto;
+
+  & h5 {
+    ${fonts.Roboto};
+    font-style: normal;
+    font-size: 3rem;
+    color: ${colorsRoles.DarkGrey};
+    color: ${colorsRoles.Brand03};
+  }
+
+  & h2 {
+    ${fonts.RobotoBold};
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4rem;
+    color: ${colorsRoles.DarkGrey};
+  }
+
+  & p {
+    ${fonts.Roboto};
+    font-style: normal;
+    font-size: 2rem;
+    color: ${colorsRoles.DarkGrey};
+    letter-spacing: 0;
+    line-height: 1.5;
+    text-align: left;
+    margin: 24px 0;
+  }
+
+  & img {
+    width: 100%;
+    margin: 24px 0;
+  }
+
+  & a {
+    color: ${colorsRoles.Brand02};
+  }
+
+  & ul {
+    margin: 16px 0;
+    li {
+      position: relative;
+      ${fonts.Roboto};
+      font-style: normal;
+      font-size: 2rem;
+      color: ${colorsRoles.DarkGrey};
+      letter-spacing: 0;
+      line-height: 2rem;
+      text-align: left;
+      opacity: 0.8;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: red;
+        transform: translate(50%, -50%);
+        top: 50%;
+        left: -16px;
+      }
+    }
+  }
+`;
+
+export const PostItemPage = styled.div`
+  background-color: ${colorsRoles.White};
+`;
+
+export const PostItemContainer = styled.div`
+  position: relative;
+  width: 80%;
+  box-shadow: 0 1px 4px 0 ${colorsRoles.Brand03}20;
+  margin: auto;
+  padding: 0 32px;
+
+  ${media.desktop`
+  width: 50%;
+  `}
 `;
