@@ -18,7 +18,7 @@ import {
   RawSketch,
   AtomicDesign,
   Invision,
-  StyledComponents,
+  StyledComponentsDev,
   ReactJs,
   PixelPerfect,
   Zeplin,
@@ -38,6 +38,8 @@ import {
   LightRoom,
   GraphicTablet,
   CrossBrowsersTesting,
+  CoffeeBreakLogoDeve,
+  StrechingDev,
 } from "./Icons-Methodo";
 import {
   AlmahaProject,
@@ -135,13 +137,13 @@ export const MainMethodoUXUI = [
   CoffeeBreak,
 ];
 export const MainMethodoDeveloper = [
-  Streching,
+  StrechingDev,
   ReactJs,
-  StyledComponents,
+  StyledComponentsDev,
   ResponsiveDesign,
   CrossBrowsersTesting,
   Git,
-  CoffeeBreak,
+  CoffeeBreakLogoDeve,
 ];
 export const MainMethodoRetoucher = [LightRoom, Photoshop, GraphicTablet];
 

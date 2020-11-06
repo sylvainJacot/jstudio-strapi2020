@@ -1,17 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="57px" height="80px" viewBox="0 0 57 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>css-5</title>
-    <g id="✨Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="01-Base-/-Ic-/-SamsungGuidelines" transform="translate(-11.000000, 0.000000)" fill-rule="nonzero">
-            <g id="css-5" transform="translate(11.000000, 0.000000)">
-                <path d="M44.4096,2.96 L39.7088,2.96 L44.5984,8.2688 L44.5984,10.7936 L34.5248,10.7936 L34.5248,7.8368 L39.4144,7.8368 L34.5248,2.528 L34.5248,-1.8189894e-15 L44.4128,-1.8189894e-15 L44.4096,2.96 Z M32.5248,2.96 L27.8176,2.96 L32.7136,8.2688 L32.7136,10.7936 L22.6368,10.7936 L22.6368,7.8368 L27.5264,7.8368 L22.6368,2.528 L22.6368,-1.8189894e-15 L32.5248,-1.8189894e-15 L32.5248,2.96 Z M20.7552,3.0816 L15.6832,3.0816 L15.6832,7.7152 L20.7552,7.7152 L20.7552,10.7968 L12.0736,10.7968 L12.0736,1.73372428e-15 L20.7552,1.73372428e-15 L20.7552,3.0816 Z" id="Shape" fill="#131313"></path>
-                <polygon id="Path" fill="#1572B6" points="5.1584 73.5712 0 15.7248 56.672 15.7248 51.5072 73.5616 28.3008 79.9936"></polygon>
-                <polygon id="Path" fill="#33A9DC" points="28.336 75.0784 47.088 69.8784 51.4976 20.4544 28.336 20.4544"></polygon>
-                <polygon id="Path" fill="#FFFFFF" points="28.336 41.4112 37.7248 41.4112 38.3712 34.1472 28.336 34.1472 28.336 27.056 46.128 27.056 45.9584 28.96 44.2144 48.512 28.336 48.512"></polygon>
-                <polygon id="Path" fill="#EBEBEB" points="28.3744 59.8368 28.3424 59.8368 20.4416 57.7024 19.936 52.0448 12.8192 52.0448 13.8144 63.184 28.3488 67.2288 28.3904 67.2288 28.3904 59.8368"></polygon>
-                <polygon id="Path" fill="#FFFFFF" points="37.1232 48.2016 36.2688 57.696 28.3552 59.8304 28.3552 67.2224 42.8992 63.1904 43.0048 61.9904 44.24 48.1984 37.1232 48.1984"></polygon>
-                <path d="M28.3616,27.056 L28.3616,34.1504 L11.2288,34.1504 L11.0816,32.5568 L10.7584,28.96 L10.5888,27.056 L28.3616,27.056 Z M28.336,41.4112 L28.336,48.5056 L20.5248,48.5056 L20.3872,46.912 L20.064,43.3152 L19.8944,41.4112 L28.3328,41.4112 L28.336,41.4112 Z" id="Shape" fill="#EBEBEB"></path>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 57 80" style="enable-background:new 0 0 57 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3E0A18;}
+	.st1{fill:#BB204A;}
+	.st2{fill:#FA5581;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#EBEBEB;}
+	.st5{fill:#7D1531;}
+	.st6{fill:#F92A62;}
+	.st7{fill:#FB7FA1;}
+	.st8{fill:#FDAAC0;}
+	.st9{fill:#FED4E0;}
+</style>
+<title>css-5</title>
+<g id="css-5" transform="translate(11.000000, 0.000000)">
+	<path id="Shape" class="st0" d="M33.4,3h-4.7l4.9,5.3v2.5H23.5v-3h4.9l-4.9-5.3V0h9.9L33.4,3z M21.5,3h-4.7l4.9,5.3v2.5H11.6v-3
+		h4.9l-4.9-5.3V0h9.9V3z M9.8,3.1H4.7v4.6h5.1v3.1H1.1V0h8.7V3.1z"/>
+	<polygon id="Path" class="st1" points="-5.8,73.6 -11,15.7 45.7,15.7 40.5,73.6 17.3,80 	"/>
+	<polygon class="st2" points="17.3,75.1 36.1,69.9 40.5,20.5 17.3,20.5 	"/>
+	<polygon class="st3" points="17.3,41.4 26.7,41.4 27.4,34.1 17.3,34.1 17.3,27.1 35.1,27.1 35,29 33.2,48.5 17.3,48.5 	"/>
+	<polygon class="st4" points="17.4,59.8 17.3,59.8 9.4,57.7 8.9,52 1.8,52 2.8,63.2 17.3,67.2 17.4,67.2 17.4,59.8 	"/>
+	<polygon class="st3" points="26.1,48.2 25.3,57.7 17.4,59.8 17.4,67.2 31.9,63.2 32,62 33.2,48.2 26.1,48.2 	"/>
+	<path class="st4" d="M17.4,27.1v7.1H0.2l-0.1-1.6L-0.2,29l-0.2-1.9H17.4z M17.3,41.4v7.1H9.5l-0.1-1.6l-0.3-3.6l-0.2-1.9H17.3
+		L17.3,41.4z"/>
+</g>
+<rect x="-119.1" y="98" class="st0" width="25.7" height="25.7"/>
+<rect x="-81.3" y="98" class="st5" width="25.7" height="25.7"/>
+<rect x="-40.9" y="98" class="st1" width="25.7" height="25.7"/>
+<rect x="-5.8" y="98" class="st6" width="25.7" height="25.7"/>
+<rect x="29.4" y="98" class="st2" width="25.7" height="25.7"/>
+<rect x="73" y="98" class="st7" width="25.7" height="25.7"/>
+<rect x="112.3" y="98" class="st8" width="25.7" height="25.7"/>
+<rect x="162.4" y="98" class="st9" width="25.7" height="25.7"/>
 </svg>
