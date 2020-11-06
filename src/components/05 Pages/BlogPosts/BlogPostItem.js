@@ -30,8 +30,9 @@ const BlogPostItem = () => {
         <>
           <BackButton />
           <PostItemPage>
+            <Title>{post.title}</Title>
+            <PictureHeader src={post.thumbnail[0].url} />
             <PostItemContainer>
-              <Title>{post.title}</Title>
               <Content>{parse(post.content)}</Content>
             </PostItemContainer>
           </PostItemPage>
@@ -54,11 +55,22 @@ export const Title = styled.h1`
   padding-top: 120px;
   margin: auto;
   text-align: center;
+  margin-bottom: 48px;
+  width: 80%;
 
   ${media.tablet`
     font-size: 6rem;
     line-height: 6rem;
     `}
+
+  ${media.desktop`
+  width: 50%;
+  `}
+`;
+
+export const PictureHeader = styled.img`
+  width: 70%;
+  margin-bottom: 48px;
 `;
 
 export const Content = styled.div`
@@ -79,6 +91,7 @@ export const Content = styled.div`
     font-style: normal;
     font-size: 4rem;
     color: ${colorsRoles.DarkGrey};
+    margin: 16px 0;
   }
 
   & p {
@@ -131,13 +144,15 @@ export const Content = styled.div`
 
 export const PostItemPage = styled.div`
   background-color: ${colorsRoles.White};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const PostItemContainer = styled.div`
   position: relative;
   width: 80%;
   box-shadow: 0 1px 4px 0 ${colorsRoles.Brand03}20;
-  margin: auto;
   padding: 0 32px;
 
   ${media.desktop`
