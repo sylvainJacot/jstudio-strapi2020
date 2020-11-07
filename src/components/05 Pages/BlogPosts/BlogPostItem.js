@@ -32,7 +32,7 @@ const BlogPostItem = () => {
           <PostItemPage>
             <Title>{post.title}</Title>
             <Creationtime time={post.createdAt}>
-              <p>Posted the </p> {new Date(post.createdAt).toLocaleDateString()}
+              <p>Posted the {new Date(post.createdAt).toLocaleDateString()}</p>
             </Creationtime>
             <PictureHeader src={post.thumbnail[0].url} />
             <PostItemContainer>
@@ -68,6 +68,8 @@ export const Title = styled.h1`
 
   ${media.desktop`
   width: 50%;
+  font-size: 6rem;
+  line-height: 8rem;
   `}
 `;
 
@@ -85,16 +87,35 @@ export const Content = styled.div`
     font-style: normal;
     font-size: 3rem;
     color: ${colorsRoles.DarkGrey};
-    color: ${colorsRoles.Brand03};
+  }
+
+  & h1 {
+    position: relative;
+    ${fonts.Roboto};
+    font-weight: 800;
+    font-style: bold;
+    font-size: 3rem;
+    color: ${colorsRoles.Brand02};
+    margin: 2rem 0;
   }
 
   & h2 {
+    position: relative;
     ${fonts.RobotoBold};
     font-weight: 800;
-    font-style: normal;
-    font-size: 4rem;
-    color: ${colorsRoles.DarkGrey};
-    margin: 16px 0;
+    font-size: 3rem;
+    color: ${colorsRoles.Brand02}80;
+    margin: 4rem 0;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      transform: translateY(5rem);
+      background-color: ${colorsRoles.LightGrey2};
+    }
   }
 
   & p {
@@ -105,7 +126,7 @@ export const Content = styled.div`
     letter-spacing: 0;
     line-height: 1.5;
     text-align: left;
-    margin: 24px 0;
+    margin-bottom: 2rem;
   }
 
   & img {
@@ -117,7 +138,14 @@ export const Content = styled.div`
     color: ${colorsRoles.Brand02};
   }
 
-  & ul {
+  & blockquote {
+    background-color: #2d353b;
+    color: ${colorsRoles.LightGrey};
+    padding: 8px;
+  }
+
+  & ul,
+  & ol {
     margin: 16px 0;
     li {
       position: relative;
@@ -129,6 +157,8 @@ export const Content = styled.div`
       line-height: 2rem;
       text-align: left;
       opacity: 0.8;
+      margin-bottom: 24px;
+      margin-left: 24px;
 
       &::before {
         content: "";
@@ -139,7 +169,8 @@ export const Content = styled.div`
         background-color: red;
         transform: translate(50%, -50%);
         top: 50%;
-        left: -16px;
+        left: -24px;
+        border-radius: 50%;
       }
     }
   }
@@ -157,10 +188,26 @@ export const PostItemContainer = styled.div`
   width: 80%;
   box-shadow: 0 1px 4px 0 ${colorsRoles.Brand03}20;
   padding: 0 32px;
+  ${fonts.Roboto};
+  font-style: normal;
+  font-size: 2rem;
+  color: ${colorsRoles.DarkGrey};
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: left;
+  margin: 24px 0;
 
   ${media.desktop`
   width: 50%;
   `}
 `;
 
-export const Creationtime = styled.time``;
+export const Creationtime = styled.time`
+  & p {
+    ${fonts.Roboto};
+    font-style: normal;
+    font-size: 2rem;
+    color: ${colorsRoles.DarkGrey2};
+    margin-bottom: 80px;
+  }
+`;

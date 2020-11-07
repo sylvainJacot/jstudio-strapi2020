@@ -66,21 +66,21 @@ export const ContentText = styled.div`
     margin-top: 120px;
 
     ${media.tablet`
-    font-size: 6rem;
-    line-height: 6rem;
-    margin-top: 134px;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-top: 169px;
     `}
 
     ${media.desktop`
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 5rem;
+    line-height: 5rem;
     flex-direction: unset;
     align-items: unset;
-    margin-top: 172px;
+    margin-top: 153px;
     `}
 
     ${media.desktopL`
-    margin-top: 232px;
+    margin-top:214px;
     `}
   }
 
@@ -159,11 +159,11 @@ export const Bullet = styled.div`
 export const StyledLink = styled(Link)`
   &:hover {
     ${ThumbnailPicture} {
-      transform: translate3d(24px, -24px, 0);
+      transform: translate3d(32px, -32px, 0);
       transition: ${transitions.basic1}
     }
     ${ContentText} {
-      transform: translate3d(-24px, 24px, 0);
+      transform: translate3d(-32px, 32px, 0);
       transition: ${transitions.basic1}
     }
   }
