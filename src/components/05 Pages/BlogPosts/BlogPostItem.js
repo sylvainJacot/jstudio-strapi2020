@@ -31,6 +31,9 @@ const BlogPostItem = () => {
           <BackButton />
           <PostItemPage>
             <Title>{post.title}</Title>
+            <Creationtime time={post.createdAt}>
+              <p>Posted the </p> {new Date(post.createdAt).toLocaleDateString()}
+            </Creationtime>
             <PictureHeader src={post.thumbnail[0].url} />
             <PostItemContainer>
               <Content>{parse(post.content)}</Content>
@@ -159,3 +162,5 @@ export const PostItemContainer = styled.div`
   width: 50%;
   `}
 `;
+
+export const Creationtime = styled.time``;

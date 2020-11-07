@@ -45,7 +45,7 @@ const BlogPage = () => {
                 descriptionpost={parse(
                   item.Description.substring(0, 208) + "..."
                 )}
-                slug={pathblog + "/" + item.id}
+                slug={pathblog + "/" + item.slug}
               />
             ))}
       </BlogPageContainer>
