@@ -24,7 +24,7 @@ const BlogPage = () => {
         setTimeout(() => {
           setPosts(response);
           setIsLoading(false);
-        }, 1000);
+        }, 3000);
       });
   }, []);
 

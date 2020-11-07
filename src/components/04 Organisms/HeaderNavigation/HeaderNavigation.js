@@ -15,7 +15,9 @@ import { media } from "../../01 Atoms/MediaQueries";
 import { pathdev, pathphoto, pathuiux } from "../../01 Atoms/Data";
 import { UserContext } from "../../Hooks/Providers/Context";
 import AboutPage from "../../05 Pages/AboutPage";
-import {pathblog} from "../../01 Atoms/Data";
+import { pathblog } from "../../01 Atoms/Data";
+import BlogCTA from "./BlogCTA";
+import { fonts } from "../../01 Atoms/globalStyle";
 
 export const StyledLink = styled(Link)`
   order: 1;
@@ -108,6 +110,35 @@ margin: 0px 16px;
   }
 `;
 
+export const StyledLinkBlog = styled(Link)`
+  position: relative;
+
+  & p {
+    display: none;
+  }
+
+  & svg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: ${colorsRoles.White};
+    width: 400px;
+    height: 32px;
+    top: 50%;
+    left: -8px;
+    transform: translateY(-50%);
+    z-index: -1;
+    border-radius: 8px;
+  }
+`;
+
 const HeaderNavigation = (props) => {
   const { value, setValue } = useContext(UserContext);
 
@@ -177,9 +208,10 @@ const HeaderNavigation = (props) => {
           >
             <IcGitHub FillColor={menuColor} Size={"24px"} />
           </a>
-          <Link rel="noopener noreferrer" to={pathblog}>
-            <IcBlog FillColor={colorsRoles.Brand02} Size={"24px"} />
-          </Link>
+          <StyledLinkBlog rel="noopener noreferrer" to={pathblog}>
+            {/* <p>BLOG</p> */}
+            <IcBlog FillColor={colorsRoles.DarkGrey} Size={"24px"} />
+          </StyledLinkBlog>
         </SocialsWrapper>
       </HeaderWrapper>
       <AboutPage onClick={HandleToggle} value={value} />
