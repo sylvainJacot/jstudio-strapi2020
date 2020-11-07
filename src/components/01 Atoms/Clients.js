@@ -16,12 +16,12 @@ import SheratonLogo from "../../media/icons/clients/Sheraton.svg";
 
 
 export const ClientsUXUI = [
-    {altimg: "Samsung client", src: SamsungLogo},
-    {altimg: "Kia client", src: KiaLogo},
-    {altimg: "Love the garden client", src: LoveTheGardenLogo},
-    {altimg: "Mazda client", src: MazdaLogo},
-    {altimg: "Kit Cross client", src: KitCrossLogo},
-    {altimg: "Telenet client", src: TelenetLogo},
+    {altimg: "Samsung client logo", src: SamsungLogo},
+    {altimg: "Kia client logo", src: KiaLogo},
+    {altimg: "Love the garden client logo", src: LoveTheGardenLogo},
+    {altimg: "Mazda client logo", src: MazdaLogo},
+    {altimg: "Kit Cross client logo", src: KitCrossLogo},
+    {altimg: "Telenet client logo", src: TelenetLogo},
 ]
 
 
@@ -29,16 +29,16 @@ export const ClientsDeveloper = [
     {altimg: "Clavie client logo", src: ClavieLogo},
     {altimg: "Parentreprise client logo", src: ParentrepriseLogo},
     {altimg: "So Smart client logo", src: SoSmartLogo},
-    {altimg: "Love the garden client", src: LoveTheGardenLogo},
+    {altimg: "Love the garden client logo", src: LoveTheGardenLogo},
 
 ]
 
 export const ClientsRetoucher = [
-    {altimg: "Fred Sablon Photographer", src: FredSablonLogo2},
-    {altimg: "Clio Golbrenner", src: ClioGolbrennerLogo},
-    {altimg: "Eat Brussels", src: EatBxlLogo},
-    {altimg: "Hilton", src: HiltonLogo},
-    {altimg: "What The Fun Comedy CLub", src: WTFLogo},
-    {altimg: "Sheraton Hotels and resorts", src: SheratonLogo},
+    {altimg: "Fred Sablon Photographer logo", src: FredSablonLogo2},
+    {altimg: "Clio Golbrenner client logo", src: ClioGolbrennerLogo},
+    {altimg: "Eat Brussels client logo", src: EatBxlLogo},
+    {altimg: "Hilton hotel client logo", src: HiltonLogo},
+    {altimg: "What The Fun Comedy CLub client logo", src: WTFLogo},
+    {altimg: "Sheraton Hotels and resorts client logo", src: SheratonLogo},
 ]
 
