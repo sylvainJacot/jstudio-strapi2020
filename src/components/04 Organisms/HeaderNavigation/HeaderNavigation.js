@@ -112,6 +112,8 @@ margin: 0px 16px;
 
 export const StyledLinkBlog = styled(Link)`
   position: relative;
+  width: 32px;
+  height: 32px;
 
   & p {
     display: none;
@@ -121,7 +123,8 @@ export const StyledLinkBlog = styled(Link)`
     display: block;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left:55%;
+    transform: translate(-50%,-50%);
   }
 
   &::before {
@@ -129,13 +132,22 @@ export const StyledLinkBlog = styled(Link)`
     position: absolute;
     content: "";
     background-color: ${colorsRoles.White};
-    width: 400px;
-    height: 32px;
-    top: 50%;
-    left: -8px;
-    transform: translateY(-50%);
+    width: 32px;
+    height: 400px;
+    bottom: 0;
+    left: -50%;
+    transform: translate(50%, 0);
     z-index: -1;
     border-radius: 8px;
+
+    ${media.desktop`
+    width: 400px;
+    height: 32px;
+    bottom: unset;
+    top: 50%;
+    left: -4px;
+    transform: translate(0,-50%);
+    `}
   }
 `;
 
