@@ -61,13 +61,14 @@ export const ContentText = styled.div`
     font-size: 4rem;
     line-height: 4rem;
     color: ${colorsRoles.DarkGrey};
-    width: 64%;
-    margin-top: 64px;
+    width: 72%;
+    margin-top: 88px;
 
     ${media.tablet`
+    width: 64%;
     font-size: 4rem;
     line-height: 4rem;
-    margin-top: 152px;
+    margin-top: 78px;
     `}
 
     ${media.desktop`
@@ -75,11 +76,11 @@ export const ContentText = styled.div`
     line-height: 5rem;
     flex-direction: unset;
     align-items: unset;
-    margin-top: 137px;
+    margin-top: 98px;
     `}
 
     ${media.desktopL`
-    margin-top:192px;
+    margin-top:116px;
     `}
   }
 
@@ -98,7 +99,8 @@ export const ContentText = styled.div`
 export const ThumbnailPicture = styled.div`
   position: absolute;
   width: 240px;
-  padding-bottom: 33.33%;
+  height: 0;
+  padding-bottom: calc(240px * 0.33);
   background-color: ${colorsRoles.LightGrey};
   background-image: url("${(props) => props.thumbnailimg}");
   background-repeat: no-repeat;
@@ -109,10 +111,20 @@ export const ThumbnailPicture = styled.div`
   right: 0;
   top: 0;
   border-radius: 0 0 2rem 2rem;
-  transition: ${transitions.basic1} ${media.tablet`
-    width: 367px;
-  `} ${media.desktopL`
+  transition: ${transitions.basic1} 
+
+${media.tablet`
+width: 320px;
+  padding-bottom: calc(320px * 0.33);
+`}
+
+ ${media.desktop`
+  width: 400px;
+  padding-bottom: calc(400px * 0.33);
+  `};
+  ${media.desktopL`
   width: 468px;
+  padding-bottom: calc(468px * 0.33);
   `};
 `;
 
@@ -153,7 +165,9 @@ export const Bullet = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
+    cursor: pointer;
   &:hover {
+    cursor: pointer;
     ${ThumbnailPicture} {
       transform: translate3d(32px, -32px, 0);
       transition: ${transitions.basic1};

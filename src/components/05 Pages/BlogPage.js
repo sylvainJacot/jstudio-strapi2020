@@ -24,7 +24,7 @@ const BlogPage = () => {
         setTimeout(() => {
           setPosts(response);
           setIsLoading(false);
-        }, 3000);
+        }, 2000);
       });
   }, []);
 
@@ -33,8 +33,6 @@ const BlogPage = () => {
   return (
     <>
       <BlogPageContainer>
-        <Title>Blog</Title>
-
         {isLoading
           ? "Loading..."
           : posts.map((item, index) => (
@@ -55,12 +53,10 @@ const BlogPage = () => {
 
 export default BlogPage;
 
-export const Title = styled.p``;
-
 export const BlogPageContainer = styled.div`
   width: 100%;
-  height: 100%;
-  background-color: ${colors.White};
+  height: 100vh;
+  background-color: white;
   padding-top: 64px;
   display: flex;
   flex-direction: column;
@@ -70,18 +66,4 @@ export const BlogPageContainer = styled.div`
   align-items: center;
   width: calc(100% - 80px);
 `}
-
-  ${Title} {
-    position: relative;
-    ${fonts.PlayFairDisplay};
-    font-size: 4rem;
-    line-height: 48px;
-    color: ${colorsRoles.DarkGrey};
-    ${media.desktop`
-    font-size: 6rem;
-    line-height: 84px;
-    flex-direction: unset;
-    align-items: unset;
-  `}
-  }
 `;

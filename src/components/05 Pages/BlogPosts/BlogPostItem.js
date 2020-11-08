@@ -74,7 +74,7 @@ export const Title = styled.h1`
 `;
 
 export const PictureHeader = styled.div`
-  width: 100%;
+  width: 280px;
   height: 0;
   padding-bottom: 33.33%;
   background-image: url("${(props) => props.headerimg}");
@@ -116,7 +116,7 @@ export const Content = styled.div`
     font-weight: 800;
     font-size: 3rem;
     color: ${colorsRoles.Brand02}80;
-    margin: 4rem 0;
+    margin: 12rem 0 4rem 0;
 
     &::before {
       display: block;
@@ -127,6 +127,14 @@ export const Content = styled.div`
       transform: translateY(5rem);
       background-color: ${colorsRoles.LightGrey2};
     }
+  }
+  & h4 {
+    position: relative;
+    ${fonts.RobotoBold};
+    font-weight: 800;
+    font-size: 3rem;
+    color: ${colorsRoles.DarkGrey};
+    margin-bottom: 2rem;
   }
 
   & p {
@@ -158,9 +166,11 @@ export const Content = styled.div`
     background-color: #2d353b;
     padding: 16px;
     border-radius: 16px;
+    margin-bottom: 16px;
 
     p {
       color: ${colorsRoles.LightGrey};
+      margin-bottom: 0;
     }
   }
 
@@ -207,6 +217,8 @@ export const Content = styled.div`
         counter-increment: section;
         content: counters(section, ".") " ";
         left: -28.5px;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 1;
         color: ${colorsRoles.Brand02};
       }
@@ -229,7 +241,7 @@ export const Content = styled.div`
 
 export const PostItemPage = styled.div`
   width: 100%;
-  background-color: ${colorsRoles.White};
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,9 +264,12 @@ export const PostItemContainer = styled.div`
   line-height: 1.5;
   text-align: left;
   margin: 24px 0;
+  border-radius: 8px;
+  padding-top: 16px;
 
   ${media.desktop`
   width: 50%;
+  padding-top: 40px;
   `}
 `;
 
