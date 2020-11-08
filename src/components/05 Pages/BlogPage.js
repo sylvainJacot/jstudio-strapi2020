@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import ThumbnailBlog from "../04 Organisms/BlogPage/ThumbnailBlog";
-import { fonts } from "../01 Atoms/globalStyle";
 import { media } from "../01 Atoms/MediaQueries";
-import { colors, colorsRoles } from "../01 Atoms/Colors";
 import { API_URL } from "../../config";
 import parse from "html-react-parser";
 import { pathblog } from "../01 Atoms/Data";
