@@ -4,20 +4,19 @@ import styled from "styled-components";
 import { colors, colorsRoles } from "../../01 Atoms/Colors";
 import { media } from "../../01 Atoms/MediaQueries";
 import { fonts } from "../../01 Atoms/globalStyle";
-import {transitions} from "../../01 Atoms/Animations";
+import { transitions } from "../../01 Atoms/Animations";
 
 const ThumbnailBlog = (props) => {
   return (
     <>
       <StyledLink to={props.slug}>
         <ThumbnailBlogContainer>
-          <ThumbnailPicture>
+          <ThumbnailPicture thumbnailimg={props.thumbnail}>
             <ThumbnailPictureNav>
               <Bullet bgcolor={colorsRoles.Brand01}></Bullet>
               <Bullet bgcolor={colorsRoles.Brand02}></Bullet>
               <Bullet bgcolor={colorsRoles.Brand03}></Bullet>
             </ThumbnailPictureNav>
-            <img src={props.thumbnail} alt="test" />
           </ThumbnailPicture>
 
           <ContentText>
@@ -63,12 +62,12 @@ export const ContentText = styled.div`
     line-height: 4rem;
     color: ${colorsRoles.DarkGrey};
     width: 64%;
-    margin-top: 120px;
+    margin-top: 64px;
 
     ${media.tablet`
     font-size: 4rem;
     line-height: 4rem;
-    margin-top: 169px;
+    margin-top: 152px;
     `}
 
     ${media.desktop`
@@ -76,11 +75,11 @@ export const ContentText = styled.div`
     line-height: 5rem;
     flex-direction: unset;
     align-items: unset;
-    margin-top: 153px;
+    margin-top: 137px;
     `}
 
     ${media.desktopL`
-    margin-top:214px;
+    margin-top:192px;
     `}
   }
 
@@ -99,39 +98,36 @@ export const ContentText = styled.div`
 export const ThumbnailPicture = styled.div`
   position: absolute;
   width: 240px;
-  height: 150px;
+  padding-bottom: 33.33%;
+  background-color: ${colorsRoles.LightGrey};
+  background-image: url("${(props) => props.thumbnailimg}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: ${colors.LightGrey2};
   box-shadow: 0px 10px 16px 1px rgba(0, 0, 0, 0.08);
   right: 0;
   top: 0;
-  overflow: hidden;
-  border-radius: 1rem;
-  transition: ${transitions.basic1}
-
-  ${media.tablet`
+  border-radius: 0 0 2rem 2rem;
+  transition: ${transitions.basic1} ${media.tablet`
     width: 367px;
-  height: 230px;
-  `}
-
-  ${media.desktopL`
+  `} ${media.desktopL`
   width: 468px;
-  height: 293px;
-  `}
-
-  & img {
-    width: 100%;
-    background-color: ${colorsRoles.LightGrey};
-  }
+  `};
 `;
 
 export const ThumbnailPictureNav = styled.div`
+  position: absolute;
+  top: -24px;
   height: 24px;
   width: 100%;
   background-color: ${colors.LightGrey2};
   display: flex;
   align-items: center;
+  border-radius:2rem 2rem 0 0;
 
   ${media.tablet`
+  top: -40px;
   height: 40px;
   width: 100%;
   `}
@@ -160,11 +156,11 @@ export const StyledLink = styled(Link)`
   &:hover {
     ${ThumbnailPicture} {
       transform: translate3d(32px, -32px, 0);
-      transition: ${transitions.basic1}
+      transition: ${transitions.basic1};
     }
     ${ContentText} {
       transform: translate3d(-32px, 32px, 0);
-      transition: ${transitions.basic1}
+      transition: ${transitions.basic1};
     }
   }
 `;

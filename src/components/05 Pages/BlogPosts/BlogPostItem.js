@@ -34,7 +34,7 @@ const BlogPostItem = () => {
             <Creationtime time={post.createdAt}>
               <p>Posted the {new Date(post.createdAt).toLocaleDateString()}</p>
             </Creationtime>
-            <PictureHeader src={post.thumbnail[0].url} />
+            <PictureHeader headerimg={post.thumbnail[0].url} />
             <PostItemContainer>
               <Content>{parse(post.content)}</Content>
             </PostItemContainer>
@@ -58,7 +58,7 @@ export const Title = styled.h1`
   padding-top: 120px;
   margin: auto;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   width: 80%;
 
   ${media.tablet`
@@ -73,23 +73,34 @@ export const Title = styled.h1`
   `}
 `;
 
-export const PictureHeader = styled.img`
+export const PictureHeader = styled.div`
+  width: 100%;
+  height: 0;
+  padding-bottom: 33.33%;
+  background-image: url("${(props) => props.headerimg}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 16px;
+  border-radius: 8px;
+
+  ${media.mobileL`
+  width: 90%;
+  `}
+  ${media.tablet`
+  width: 80%;
+  `}
+  ${media.desktop`
   width: 70%;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
+  `}
 `;
 
 export const Content = styled.div`
   position: relative;
   margin: auto;
 
-  & h5 {
-    ${fonts.Roboto};
-    font-style: normal;
-    font-size: 3rem;
-    color: ${colorsRoles.DarkGrey};
-  }
-
-  & h1 {
+  & h2 {
     position: relative;
     ${fonts.Roboto};
     font-weight: 800;
@@ -99,7 +110,7 @@ export const Content = styled.div`
     margin: 2rem 0;
   }
 
-  & h2 {
+  & h3 {
     position: relative;
     ${fonts.RobotoBold};
     font-weight: 800;
@@ -129,9 +140,14 @@ export const Content = styled.div`
     margin-bottom: 2rem;
   }
 
+  & strong {
+    font-weight: 800;
+  }
+
   & img {
     width: 100%;
     margin: 24px 0;
+    border-radius: 8px;
   }
 
   & a {
@@ -140,12 +156,15 @@ export const Content = styled.div`
 
   & blockquote {
     background-color: #2d353b;
-    color: ${colorsRoles.LightGrey};
-    padding: 8px;
+    padding: 16px;
+    border-radius: 16px;
+
+    p {
+      color: ${colorsRoles.LightGrey};
+    }
   }
 
-  & ul,
-  & ol {
+  & ul {
     margin: 16px 0;
     li {
       position: relative;
@@ -174,13 +193,50 @@ export const Content = styled.div`
       }
     }
   }
+
+  & ol {
+    counter-reset: section;
+    list-style-type: none;
+    padding-left: 37px;
+    li {
+      position: relative;
+      margin-bottom: 16px;
+
+      &::before {
+        position: absolute;
+        counter-increment: section;
+        content: counters(section, ".") " ";
+        left: -28.5px;
+        z-index: 1;
+        color: ${colorsRoles.Brand02};
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-color: ${colorsRoles.Brand02}30;
+        transform: translate(50%, -50%);
+        top: 50%;
+        left: -48px;
+        border-radius: 50%;
+        z-index: 0;
+      }
+    }
+  }
 `;
 
 export const PostItemPage = styled.div`
+  width: 100%;
   background-color: ${colorsRoles.White};
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  ${media.desktop`
+  width: calc(100% - 80px);
+  `}
 `;
 
 export const PostItemContainer = styled.div`
@@ -208,6 +264,10 @@ export const Creationtime = styled.time`
     font-style: normal;
     font-size: 2rem;
     color: ${colorsRoles.DarkGrey2};
-    margin-bottom: 80px;
+    margin-bottom: 24px;
+
+    ${media.desktop`
+    margin-bottom: 40px;
+    `}
   }
 `;
