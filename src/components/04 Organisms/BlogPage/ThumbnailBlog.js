@@ -111,14 +111,14 @@ export const ThumbnailPicture = styled.div`
   right: 0;
   top: 0;
   border-radius: 0 0 2rem 2rem;
-  transition: ${transitions.basic1} 
+  transition: ${transitions.basic1};
 
-${media.tablet`
-width: 320px;
+  ${media.tablet`
+  width: 320px;
   padding-bottom: calc(320px * 0.33);
-`}
+  `}
 
- ${media.desktop`
+  ${media.desktop`
   width: 400px;
   padding-bottom: calc(400px * 0.33);
   `};
@@ -136,7 +136,7 @@ export const ThumbnailPictureNav = styled.div`
   background-color: ${colors.LightGrey2};
   display: flex;
   align-items: center;
-  border-radius:2rem 2rem 0 0;
+  border-radius: 2rem 2rem 0 0;
 
   ${media.tablet`
   top: -40px;
@@ -165,7 +165,7 @@ export const Bullet = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-    cursor: pointer;
+  cursor: pointer;
   &:hover {
     cursor: pointer;
     ${ThumbnailPicture} {
