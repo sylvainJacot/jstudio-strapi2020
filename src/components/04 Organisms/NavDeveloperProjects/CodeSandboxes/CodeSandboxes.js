@@ -23,7 +23,7 @@ const CodeSandboxes = () => {
         setTimeout(() => {
           setCodesandboxes(response);
           setIsLoading(false);
-        }, 0);
+        }, 3000);
       });
   }, []);
 

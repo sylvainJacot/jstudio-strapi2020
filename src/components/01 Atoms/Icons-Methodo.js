@@ -3,6 +3,7 @@ import AtomicDesignLogo from "../../media/icons/methodology/atomicdesign.svg";
 import RawSketchLogo from "../../media/icons/methodology/rawSketch.svg";
 import InvisionLogo from "../../media/icons/methodology/invision.svg";
 import StyledComponentsLogo from "../../media/icons/methodology/styledcomponents.png";
+import StyledComponentsLogoDev from "../../media/icons/methodology/styledcomponents-dev.png";
 import Html5Logo from "../../media/icons/methodology/Html5.svg";
 import ReactLogo from "../../media/icons/methodology/React.svg";
 import ZeplinLogo from "../../media/icons/methodology/zeplin.svg";
@@ -19,7 +20,9 @@ import BootstrapLogo from "../../media/icons/methodology/Bootstrap.svg";
 import Css3Logo from "../../media/icons/methodology/css3.svg";
 import JavascriptLogo from "../../media/icons/methodology/javascript.svg";
 import CoffeeBreakLogo from "../../media/icons/methodology/break.svg";
+import CoffeeBreakLogoDev from "../../media/icons/methodology/break-dev.svg";
 import StretchingLogo from "../../media/icons/methodology/Streching.svg";
+import StretchingLogoDev from "../../media/icons/methodology/Streching-dev.svg";
 import LightRoomLogo from "../../media/icons/methodology/LightRoomClassic.svg";
 import GraphicTabletLogo from "../../media/icons/methodology/GraphicTablet.svg";
 import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
@@ -49,6 +52,11 @@ export const StyledComponents = {
     title: "Styled components",
     altImage: "Styled components logo",
     logo: StyledComponentsLogo,
+}
+export const StyledComponentsDev = {
+    title: "Styled components",
+    altImage: "Styled components logo",
+    logo: StyledComponentsLogoDev,
 }
 export const Html5 = {
     title: "Html 5",
@@ -130,10 +138,21 @@ export const CoffeeBreak = {
     altImage: "Coffee Break logo",
     logo: CoffeeBreakLogo,
 }
+export const CoffeeBreakLogoDeve = {
+    title: "Coffee Break",
+    altImage: "Coffee Break logo",
+    logo: CoffeeBreakLogoDev,
+}
+
 export const Streching = {
     title: "Streching",
     altImage: "Streching logo",
     logo: StretchingLogo,
+}
+export const StrechingDev = {
+    title: "Streching",
+    altImage: "Streching logo",
+    logo: StretchingLogoDev,
 }
 export const LightRoom = {
     title: "LightRoom",

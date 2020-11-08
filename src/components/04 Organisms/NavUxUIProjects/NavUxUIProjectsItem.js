@@ -1,46 +1,42 @@
 import React from "react";
 import styled from "styled-components";
 
-import {media} from "../../01 Atoms/MediaQueries";
-import {transitions} from "../../01 Atoms/Animations";
-import {colorsRoles} from "../../01 Atoms/Colors";
+import { media } from "../../01 Atoms/MediaQueries";
+import { transitions } from "../../01 Atoms/Animations";
+import { colorsRoles } from "../../01 Atoms/Colors";
 import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
 import Parallax from "react-rellax";
 import Button from "../../02 Molecules/Button";
-import {fonts} from "../../01 Atoms/globalStyle";
-
-
+import { fonts } from "../../01 Atoms/globalStyle";
 
 export const Box = styled.section`
-position: relative;
-width: 100%;
-height: 640px;
-display: flex;
-flex-direction: column-reverse;
-content-visibility: auto;
+  position: relative;
+  width: 100%;
+  height: 640px;
+  display: flex;
+  flex-direction: column-reverse;
+  content-visibility: auto;
 
-${media.desktop`
+  ${media.desktop`
 height: 880px;
 flex-direction: row;
 `}
-
 `;
 export const LeftContent = styled.div`
-height: 100%;
+  height: 100%;
 `;
 export const LeftSide = styled.div`
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-${media.desktop`
+  ${media.desktop`
 width: 50%;
 `}
 
-    ${LeftContent} {
+  ${LeftContent} {
     width: 80%;
     height: fit-content;
     text-align: center;
@@ -53,41 +49,40 @@ width: 50%;
     `}
     
     & p {
-     ${fonts.RobotoItalic};
-    font-size: 2rem;
-    color: ${props => props.FieldTextColorVisible};
-    letter-spacing: 0;
-    line-height: 24px;
-    margin-bottom: 8px;
-    font-style: italic;
+      ${fonts.RobotoItalic};
+      font-size: 2rem;
+      color: ${(props) => props.FieldTextColorVisible};
+      letter-spacing: 0;
+      line-height: 24px;
+      margin-bottom: 8px;
+      font-style: italic;
     }
-    
+
     & h3 {
-    ${fonts.PlayFairDisplay};
-    font-size: 6rem;
-    line-height: 48px;
-    color: ${props => props.TextColor};
-    margin-bottom: 24px;
-    ${media.desktop`
+      ${fonts.PlayFairDisplay};
+      font-size: 6rem;
+      line-height: 48px;
+      color: ${(props) => props.TextColor};
+      margin-bottom: 24px;
+      ${media.desktop`
     margin-bottom: 32px;
     `}
     }
-    
+
     & h3 ~ p {
-    ${fonts.Roboto};
-    font-style: normal;
-    font-size: 2rem;
-    color: ${colorsRoles.White};
-    letter-spacing: 0;
-    line-height: 1.5;
-    margin-bottom: 8px;
-    text-align: left;
-    ${media.desktop`
+      ${fonts.Roboto};
+      font-style: normal;
+      font-size: 2rem;
+      color: ${colorsRoles.White};
+      letter-spacing: 0;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      text-align: left;
+      ${media.desktop`
     margin-bottom: 16px;
     `}
     }
-
-}
+  }
 `;
 export const ForeGroundPic = styled.div``;
 export const BackGroundPic = styled.div``;
@@ -95,11 +90,9 @@ export const RightSide = styled.div`
 width: 100%;
 height: 200px;
 position: relative;
-background-color: ${props => props.bgColor};
+background-color: ${(props) => props.bgColor};
 transition: ${transitions.basic2};
--webkit-animation: ${transitions.basic2};
--moz-animation: ${transitions.basic2};
--o-animation: ${transitions.basic2};
+
 
 ${media.tablet`
 height: 400px;
@@ -135,18 +128,18 @@ transform: translate(50%,-50%);
 & img {
 width: 240px;
 
-${media.mobileL `
+${media.mobileL`
 width: 320px;
 `}
 
-${media.tablet `
+${media.tablet`
 width: 400px;
 `}
-${media.desktop `
+${media.desktop`
 width: 640px;
 `}
 
-${media.desktopL `
+${media.desktopL`
 width: 700px;
 `}
 
@@ -197,51 +190,38 @@ width: 700px;
 
 `;
 
-
 const NavUxUIProjectsItem = (props) => {
+  return (
+    <>
+      <Box>
+        <LeftSide
+          FieldTextColorVisible={props.FieldTextColorVisible}
+          TextColor={props.TextColor}
+        >
+          <LeftContent>
+            <p>{props.fields}</p>
+            <h3>{props.title}</h3>
+            <p>{props.description}</p>
+            <Button pathname={props.slug} label={"See more"} />
+          </LeftContent>
+        </LeftSide>
 
-    return (
-        <>
+        <RightSide bgColor={props.bgColor}>
+          <BackGroundPic>
+            <Parallax speed={2} percentage={0}>
+              <ResponsiveImage sourceMobile={props.backgroundpicture} />
+            </Parallax>
+          </BackGroundPic>
 
-            <Box >
-                <LeftSide FieldTextColorVisible={props.FieldTextColorVisible} TextColor={props.TextColor}>
-                    <LeftContent>
-                        <p>{props.fields}</p>
-                        <h3>{props.title}</h3>
-                        <p>{props.description}</p>
-                        <Button pathname={props.slug} label={"See more"}/>
-                    </LeftContent>
-                </LeftSide>
-
-
-                    <RightSide bgColor={props.bgColor}>
-                        <BackGroundPic>
-                            <Parallax speed={2} percentage={0} >
-                                <ResponsiveImage
-                                    sourceMobile={props.backgroundpicture}
-                                />
-                            </Parallax>
-                        </BackGroundPic>
-
-
-                        <ForeGroundPic>
-                            <Parallax speed={8} percentage={0}>
-                            <ResponsiveImage
-                                sourceMobile={props.foregroundpicture}
-                            />
-                            </Parallax>
-                        </ForeGroundPic>
-                </RightSide>
-
-
-            </Box>
-
-
-
-        </>
-
-    )
+          <ForeGroundPic>
+            <Parallax speed={8} percentage={0}>
+              <ResponsiveImage sourceMobile={props.foregroundpicture} />
+            </Parallax>
+          </ForeGroundPic>
+        </RightSide>
+      </Box>
+    </>
+  );
 };
 
 export default NavUxUIProjectsItem;
-

@@ -39,9 +39,6 @@ background-color: ${colorsRoles.White};
 border-radius: 0px 0px 4px 4px;
 z-index: 0;
 transition: ${transitions.basic1};
--webkit-animation: ${transitions.basic1};
--moz-animation: ${transitions.basic1};
--o-animation: ${transitions.basic1};
 & h3 {
     ${fonts.PlayFairDisplay};
     font-size: 2rem;
@@ -68,9 +65,6 @@ margin: 40px;
   ${PictureLabel} {
      bottom: -56px;
      transition: ${transitions.basic2};
-    -webkit-animation: ${transitions.basic2};
-    -moz-animation: ${transitions.basic2};
-    -o-animation: ${transitions.basic2};
         }
     `}
 }
@@ -99,9 +93,6 @@ left: 0;
 background: linear-gradient(to right bottom, ${colorsRoles.White} 5.99%, ${colorsRoles.White} 48.93%, rgba(255, 255, 255, 0) 49.21%);
 opacity: .2;
 transition: ${transitions.basic1};
--webkit-animation: ${transitions.basic1};
--moz-animation: ${transitions.basic1};
--o-animation: ${transitions.basic1};
 }
 & img {
 width: 100%;
@@ -116,9 +107,6 @@ height: auto;
   transform: translateY(-100%);
   opacity: .1;
   transition: ${transitions.basic1};
-    -webkit-animation: ${transitions.basic1};
-    -moz-animation: ${transitions.basic1};
-    -o-animation: ${transitions.basic1};
   }
 
 }
