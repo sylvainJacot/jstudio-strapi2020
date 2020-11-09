@@ -7,7 +7,6 @@ import { media } from "../../01 Atoms/MediaQueries";
 import { API_URL } from "../../../config";
 import parse from "html-react-parser";
 import BackButton from "../../02 Molecules/BackButton";
-import AnimatedLogoJS from "../../01 Atoms/animated-logojs";
 
 const BlogPostItem = () => {
   const { id } = useParams();
@@ -125,7 +124,7 @@ export const Content = styled.div`
       position: absolute;
       height: 1px;
       width: 100%;
-      transform: translateY(5rem);
+      top: 120%;
       background-color: ${colorsRoles.LightGrey2};
     }
   }
@@ -168,6 +167,7 @@ export const Content = styled.div`
     padding: 16px;
     border-radius: 16px;
     margin-bottom: 16px;
+    overflow: scroll;
 
     p {
       color: ${colorsRoles.LightGrey};
@@ -275,6 +275,8 @@ export const PostItemContainer = styled.div`
 `;
 
 export const Creationtime = styled.time`
+  display: flex;
+
   & p {
     ${fonts.Roboto};
     font-style: normal;
