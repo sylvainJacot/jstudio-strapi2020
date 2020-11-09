@@ -7,6 +7,7 @@ import { media } from "../../01 Atoms/MediaQueries";
 import { API_URL } from "../../../config";
 import parse from "html-react-parser";
 import BackButton from "../../02 Molecules/BackButton";
+import AnimatedLogoJS from "../../01 Atoms/animated-logojs";
 
 const BlogPostItem = () => {
   const { id } = useParams();
@@ -41,7 +42,7 @@ const BlogPostItem = () => {
           </PostItemPage>
         </>
       ) : (
-        "Loading..."
+        <AnimatedLogoJS/>
       )}
     </>
   );

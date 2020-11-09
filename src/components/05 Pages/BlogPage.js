@@ -5,6 +5,7 @@ import { media } from "../01 Atoms/MediaQueries";
 import { API_URL } from "../../config";
 import parse from "html-react-parser";
 import { pathblog } from "../01 Atoms/Data";
+import AnimatedLogoJS from "../01 Atoms/animated-logojs";
 
 const BlogPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,7 +33,7 @@ const BlogPage = () => {
     <>
       <BlogPageContainer>
         {isLoading
-          ? "Loading..."
+          ? <AnimatedLogoJS/>
           : posts.map((item, index) => (
               <ThumbnailBlog
                 key={index}
