@@ -16,8 +16,6 @@ import { pathdev, pathphoto, pathuiux } from "../../01 Atoms/Data";
 import { UserContext } from "../../Hooks/Providers/Context";
 import AboutPage from "../../05 Pages/AboutPage";
 import { pathblog } from "../../01 Atoms/Data";
-import BlogCTA from "./BlogCTA";
-import { fonts } from "../../01 Atoms/globalStyle";
 
 export const StyledLink = styled(Link)`
   order: 1;
@@ -93,7 +91,6 @@ display: flex;
 flex-direction: column;
 order: 3;
 `}
-
   a {
     margin: 0px 8px;
 
@@ -123,8 +120,8 @@ export const StyledLinkBlog = styled(Link)`
     display: block;
     position: absolute;
     top: 50%;
-    left:55%;
-    transform: translate(-50%,-50%);
+    left: 55%;
+    transform: translate(-50%, -50%);
   }
 
   &::before {
@@ -199,6 +196,7 @@ const HeaderNavigation = (props) => {
         <IcBurgerMenu onClick={HandleToggle} isabouton={menuColor} />
 
         <SocialsWrapper>
+
           <a
             target="_blank"
             rel="noopener noreferrer"

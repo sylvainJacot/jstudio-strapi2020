@@ -60,7 +60,7 @@ font-weight: bold;
 `}
   }
 `;
-
+;
 export class LogoJacotStudio extends React.Component {
   render() {
     const { CircleColor, FillColor, Size } = this.props;
