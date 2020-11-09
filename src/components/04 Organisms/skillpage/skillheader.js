@@ -219,7 +219,7 @@ const Skillheader = (props) => {
                     </TextContent>
                 </HeaderMain>
                 <Clients>
-                    <p>Collaborated with</p>
+                    <p>Clients</p>
                     <LogosWrapper>
                         {
                             props.ClientsUXUI && ClientsUXUI.map((item, index) => (
