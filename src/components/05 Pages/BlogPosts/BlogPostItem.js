@@ -42,7 +42,7 @@ const BlogPostItem = () => {
           </PostItemPage>
         </>
       ) : (
-        <AnimatedLogoJS/>
+        "Loading..."
       )}
     </>
   );
