@@ -13,13 +13,13 @@ export default createGlobalStyle`
 
 
 @font-face {
-  font-family: 'Roboto', sans-serif;
-url(${RobotoRegular}) format('woff'),
+font-family: 'Roboto', sans-serif;
+src: url(${RobotoRegular}) format('woff'),
 url(${RobotoRegular2}) format('woff2'),
 url(${RobotoLightItalic}) format ('woff'),
 url(${RobotoBold}) format ('woff');
 font-weight: normal;
-  font-style: normal;
+font-style: normal;
 }
 
 
@@ -30,8 +30,9 @@ font-size: 8px;
 }
 
 body {
-background-color: ${colorsRoles.DarkGrey}
-`;
+background-color: ${colorsRoles.DarkGrey};
+}
+`
 
 export const fonts = {
     Roboto : "font-family: 'Roboto', sans-serif;",
