@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F9CA1C;}
+	.st1{fill:#FFFFFF;}
+</style>
+<title>01 Base / Ic / Trello</title>
+<g>
+	<g id="trello">
+		<path id="Rectangle" class="st0" d="M7.8,0h64.4C76.5,0,80,3.5,80,7.8v64.4c0,4.3-3.5,7.8-7.8,7.8H7.8C3.5,80,0,76.5,0,72.2V7.8
+			C0,3.5,3.5,0,7.8,0z"/>
+		<path class="st1" d="M49,10.4h16.9c2.1,0,3.8,1.7,3.8,3.8v27.5c0,2.1-1.7,3.8-3.8,3.8H49c-2.1,0-3.8-1.7-3.8-3.8V14.1
+			C45.2,12.1,46.9,10.4,49,10.4z"/>
+		<path class="st1" d="M14.1,10.4H31c2.1,0,3.8,1.7,3.8,3.8v47.5c0,2.1-1.7,3.8-3.8,3.8H14.1c-2.1,0-3.8-1.7-3.8-3.8V14.1
+			C10.4,12.1,12.1,10.4,14.1,10.4z"/>
+	</g>
+</g>
+</svg>
