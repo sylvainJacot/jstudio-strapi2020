@@ -7,6 +7,7 @@ import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import TemplateMethodo from "../../04 Organisms/skillpage/TemplateMethodo";
 import TemplateImageProject from "../../04 Organisms/projectitem/TemplateImageProject";
 import BackButton from "../../02 Molecules/BackButton";
+import {Helmet} from "react-helmet";
 
 export const Box = styled.div`
 
@@ -40,6 +41,10 @@ const CreativeDeveloperProject = (props) => {
 
     return <>
         <Box>
+        <Helmet>
+          <title>{props.title}</title>
+          <meta name="description" content={props.description} />
+        </Helmet>
             <BackButton/>
             <ProjectHeader
                 headerImage={props.headerImage}
