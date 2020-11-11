@@ -7,6 +7,7 @@ import { media } from "../../01 Atoms/MediaQueries";
 import { API_URL } from "../../../config";
 import parse from "html-react-parser";
 import BackButton from "../../02 Molecules/BackButton";
+import postsAPI from "../../services/postsAPI";
 
 const BlogPostItem = () => {
   const { id } = useParams();
@@ -14,15 +15,14 @@ const BlogPostItem = () => {
   let [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    fetch(`${API_URL}/posts/${id}`)
-      .then((res) => res.json())
-      .then((res) => {
-        setTimeout(() => {
-          setPost(res);
-          setIsLoading(true);
-        }, 0);
-      });
+    fetchOnePost();
   });
+
+  const fetchOnePost = async () => {
+    const data = await postsAPI.findOne(id);
+    setPost(data);
+    setIsLoading(true);
+  }
 
   return (
     <>
