@@ -7,7 +7,9 @@ import { media } from "../../01 Atoms/MediaQueries";
 import { API_URL } from "../../../config";
 import parse from "html-react-parser";
 import BackButton from "../../02 Molecules/BackButton";
+import { Helmet } from "react-helmet";
 import postsAPI from "../../services/postsAPI";
+
 
 const BlogPostItem = () => {
   const { id } = useParams();
@@ -38,6 +40,13 @@ const BlogPostItem = () => {
             <PostItemContainer>
               <Content>{parse(post.content)}</Content>
             </PostItemContainer>
+            <Helmet>
+              <title>{post.title}</title>
+              <meta 
+              name="description"
+              content={post.Description.slice(0,100)}
+              />
+            </Helmet>
           </PostItemPage>
         </>
       ) : (
@@ -289,3 +298,5 @@ export const Creationtime = styled.time`
     `}
   }
 `;
+
+
