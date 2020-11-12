@@ -21,8 +21,10 @@ import Css3Logo from "../../media/icons/methodology/css3.svg";
 import JavascriptLogo from "../../media/icons/methodology/javascript.svg";
 import CoffeeBreakLogo from "../../media/icons/methodology/break.svg";
 import CoffeeBreakLogoDev from "../../media/icons/methodology/break-dev.svg";
+import CoffeeBreakLogoPhoto from "../../media/icons/methodology/break-photo.svg"
 import StretchingLogo from "../../media/icons/methodology/Streching.svg";
 import StretchingLogoDev from "../../media/icons/methodology/Streching-dev.svg";
+import StrechingPhotoLogo from "../../media/icons/methodology/Streching-photo.svg"
 import LightRoomLogo from "../../media/icons/methodology/LightRoomClassic.svg";
 import GraphicTabletLogo from "../../media/icons/methodology/GraphicTablet.svg";
 import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
@@ -144,6 +146,11 @@ export const CoffeeBreakLogoDeve = {
     altImage: "Coffee Break logo",
     logo: CoffeeBreakLogoDev,
 }
+export const CoffeeBreakPhoto = {
+    title: "Coffee Break",
+    altImage: "Coffee Break logo",
+    logo: CoffeeBreakLogoPhoto,
+}
 
 export const Streching = {
     title: "Streching",
@@ -154,6 +161,11 @@ export const StrechingDev = {
     title: "Streching",
     altImage: "Streching logo",
     logo: StretchingLogoDev,
+}
+export const StrechingPhoto = {
+    title: "Streching",
+    altImage: "Streching logo",
+    logo: StrechingPhotoLogo,
 }
 export const LightRoom = {
     title: "LightRoom",

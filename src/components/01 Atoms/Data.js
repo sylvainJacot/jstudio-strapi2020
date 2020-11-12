@@ -41,6 +41,8 @@ import {
   CoffeeBreakLogoDeve,
   StrechingDev,
 Gsap,
+CoffeeBreakPhoto,
+StrechingPhoto,
 } from "./Icons-Methodo";
 import {
   AlmahaProject,
@@ -147,7 +149,7 @@ export const MainMethodoDeveloper = [
   Git,
   CoffeeBreakLogoDeve,
 ];
-export const MainMethodoRetoucher = [LightRoom, Photoshop, GraphicTablet];
+export const MainMethodoRetoucher = [StrechingPhoto, LightRoom, Photoshop, GraphicTablet, CoffeeBreakPhoto];
 
 export const UIUXProjects = [
   {
