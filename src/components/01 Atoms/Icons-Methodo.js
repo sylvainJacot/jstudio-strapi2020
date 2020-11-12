@@ -27,6 +27,7 @@ import LightRoomLogo from "../../media/icons/methodology/LightRoomClassic.svg";
 import GraphicTabletLogo from "../../media/icons/methodology/GraphicTablet.svg";
 import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
 import CodeSandBoxLogo from "../../media/icons/methodology/code-sandbox.svg";
+import GsapLogo from "../../media/icons/methodology/gsap-01.svg";
 
 export const Sketch = {
     title: "Sketch",
@@ -174,5 +175,11 @@ export const CodeSandBox = {
     title: "CodeSandBox",
     altImage: "CodeSandBox logo",
     logo: CodeSandBoxLogo,
+}
+
+export const Gsap = {
+    title: "Gsap",
+    altImage: "Gsap logo",
+    logo: GsapLogo,
 }
 

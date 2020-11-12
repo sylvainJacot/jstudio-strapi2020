@@ -40,6 +40,7 @@ import {
   CrossBrowsersTesting,
   CoffeeBreakLogoDeve,
   StrechingDev,
+Gsap,
 } from "./Icons-Methodo";
 import {
   AlmahaProject,
@@ -140,6 +141,7 @@ export const MainMethodoDeveloper = [
   StrechingDev,
   ReactJs,
   StyledComponentsDev,
+  Gsap,
   ResponsiveDesign,
   CrossBrowsersTesting,
   Git,
