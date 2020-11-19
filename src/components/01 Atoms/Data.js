@@ -12,6 +12,7 @@ import {
   ClavieProject,
   ParentrepriseProject,
   SoSmartProject,
+  TeslaProject
 } from "../01 Atoms/Images-Developer";
 import {
   Sketch,
@@ -365,9 +366,41 @@ export const UIUXProjects = [
 
 export const CreativeDeveloperProjects = [
   {
+    title: "Scroll animations",
+    skill: "Creative Developer",
+    fields: "Javascript Animation",
+    CreativeDeveloperImg: false,
+    description:
+      "The main goald is to reproduce motion made by Aurelien Salomon, a talented designer from Montréal.",
+    madeWith: [ReactJs, StyledComponentsDev, Gsap],
+    roles: [
+      {
+        titlerole: "Type",
+        descriptionrole: "Personnal Project",
+      },
+      {
+        titlerole: "Goal",
+        descriptionrole:
+          "Reproduce motion made by Aurelien Salomon, a talented designer from Montréal.",
+      },
+      {
+        titlerole: "Plateform",
+        descriptionrole: "CodeSandbox",
+      },
+    ],
+    slug: "ScrollAnime",
+    headerImage: TeslaProject.TeslaHeader,
+    decorativeimage: TeslaProject.TeslaDeco,
+    maincolor: projectColors.ScrollAnime,
+    FieldTextColorVisible: projectColors.ScrollAnime,
+    thumbnailproject: TeslaProject.TeslaThumbnail,
+    methodology: [Sketch, ReactJs, StyledComponentsDev, Gsap, Git],
+  },
+  {
     title: "Clavie",
     skill: "Creative Developer",
     fields: "Integration HTML/CSS",
+    CreativeDeveloperImg: true,
     description:
       "Active for more than 40 years in the packaging sector, the CLAVIE company has developed a professional approach in the solution of packaging problems.",
     madeWith: [Html5, Sass, Javascript],
@@ -412,6 +445,7 @@ export const CreativeDeveloperProjects = [
     title: "SoSmart",
     skill: "Creative Developer",
     fields: "Integration HTML/CSS",
+    CreativeDeveloperImg: true,
     description:
       "So Smart is an online marketplace for booking hairdressing, aesthetic and well-being services under strong promotion during off-peak hours or at the last minute.\n",
     madeWith: [Html5, CSS3],
@@ -450,6 +484,7 @@ export const CreativeDeveloperProjects = [
     title: "Parentreprise",
     skill: "Creative Developer",
     fields: "Integration HTML/CSS",
+    CreativeDeveloperImg: true,
     description:
       "Parentreprise work on employee satisfaction with effective, new and original methods.Work for fulfillment and promote change in employees in all spheres of life.",
     madeWith: [Html5, Sass, Javascript],

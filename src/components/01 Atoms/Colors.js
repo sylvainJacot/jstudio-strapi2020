@@ -42,6 +42,7 @@ export const projectColors = {
     Clavie : "#205aa4",
     SoSmart : "#e31742",
     Parentreprise : "#6c3d8e",
+    ScrollAnime: "#545A77",
 }
 
 export const methodoColors = {

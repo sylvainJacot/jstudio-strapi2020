@@ -157,7 +157,8 @@ const HeaderNavigation = (props) => {
 
   let menuColor = value ? colorsRoles.DarkGrey : colorsRoles.White;
 
-  let Location = useLocation();
+  let Location = useLocation(null).pathname;
+  console.log(Location);
   let SlugUiUx = useRouteMatch(pathuiux + "/:slug");
   let SlugDev = useRouteMatch(pathdev + "/:slug");
   let SlugPhoto = useRouteMatch(pathphoto + "/:slug");
@@ -166,11 +167,11 @@ const HeaderNavigation = (props) => {
 
   const HandleColorChange = () => {
     setColor(
-      pathuiux === Location.pathname || SlugUiUx
+      pathuiux === Location || SlugUiUx
         ? colorsRoles.Brand01
-        : pathdev === Location.pathname || SlugDev
+        : pathdev === Location || SlugDev
         ? colorsRoles.Brand02
-        : pathphoto === Location.pathname || SlugPhoto
+        : pathphoto === Location || SlugPhoto
         ? colorsRoles.Brand03
         : colorsRoles.LightGrey
     );
@@ -196,7 +197,6 @@ const HeaderNavigation = (props) => {
         <IcBurgerMenu onClick={HandleToggle} isabouton={menuColor} />
 
         <SocialsWrapper>
-
           <a
             target="_blank"
             rel="noopener noreferrer"

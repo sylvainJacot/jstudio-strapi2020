@@ -17,6 +17,11 @@ import ParentrepriseHeaderlImg from "../../media/img/Projects/02_Creative Develo
 import ParentrepriseDecoImg from "../../media/img/Projects/02_Creative Developer/parentreprise/Parentreprise-deco.png";
 import ParentrepriseFolio01Img from "../../media/img/Projects/02_Creative Developer/parentreprise/Parentreprise-folio.png";
 
+/*       ------- PARENTREPRISE -------        */
+import TeslaThumbnailImg from "../../media/img/Projects/02_Creative Developer/Tesla/thumbnail-Tesla.png";
+import TeslaHeaderlImg from "../../media/img/Projects/02_Creative Developer/Tesla/header-Tesla.png";
+import TeslaDecoImg from "../../media/img/Projects/02_Creative Developer/Tesla/Tesla-deco.png";
+
 
 export const ClavieProject = {
     ClavieHeader : ClavieHeaderImg,
@@ -38,4 +43,10 @@ export const ParentrepriseProject = {
     ParentrepriseHeader : ParentrepriseHeaderlImg,
     ParentrepriseDeco : ParentrepriseDecoImg,
     ParentrepriseFolio01 : ParentrepriseFolio01Img,
+}
+
+export const TeslaProject = {
+    TeslaThumbnail : TeslaThumbnailImg,
+    TeslaHeader : TeslaHeaderlImg,
+    TeslaDeco : TeslaDecoImg,
 }

@@ -22,6 +22,7 @@ const CreativeDeveloperProjectTemplate = ({match}) => {
             projects={creativeDeveloperproject.methodology}
             ImageProject={creativeDeveloperproject.images}
             mainColor={creativeDeveloperproject.maincolor}
+            CreativeDeveloperImg={creativeDeveloperproject.CreativeDeveloperImg}
         />
 
     </>
