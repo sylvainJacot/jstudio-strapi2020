@@ -12,7 +12,7 @@ import {
   ClavieProject,
   ParentrepriseProject,
   SoSmartProject,
-  TeslaProject
+  TeslaProject,
 } from "../01 Atoms/Images-Developer";
 import {
   Sketch,
@@ -41,9 +41,9 @@ import {
   CrossBrowsersTesting,
   CoffeeBreakLogoDeve,
   StrechingDev,
-Gsap,
-CoffeeBreakPhoto,
-StrechingPhoto,
+  Gsap,
+  CoffeeBreakPhoto,
+  StrechingPhoto,
 } from "./Icons-Methodo";
 import {
   AlmahaProject,
@@ -150,7 +150,13 @@ export const MainMethodoDeveloper = [
   Git,
   CoffeeBreakLogoDeve,
 ];
-export const MainMethodoRetoucher = [StrechingPhoto, LightRoom, Photoshop, GraphicTablet, CoffeeBreakPhoto];
+export const MainMethodoRetoucher = [
+  StrechingPhoto,
+  LightRoom,
+  Photoshop,
+  GraphicTablet,
+  CoffeeBreakPhoto,
+];
 
 export const UIUXProjects = [
   {
@@ -371,7 +377,7 @@ export const CreativeDeveloperProjects = [
     fields: "Javascript Animation",
     CreativeDeveloperImg: false,
     description:
-      "The main goald is to reproduce motion made by Aurelien Salomon, a talented designer from Montréal.",
+      "The main goal is to reproduce motion made by Aurelien Salomon, a talented designer from Montréal.",
     madeWith: [ReactJs, StyledComponentsDev, Gsap],
     roles: [
       {
